@@ -16,5 +16,29 @@ namespace AdventureWorks___Departamentos
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            frmListarDepartamentos newForm = new frmListarDepartamentos();
+            newForm.Show();
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            frmCrearDepartamentos newForm = new frmCrearDepartamentos();
+            newForm.Show();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            frmActualizarDepartamento newForm = new frmActualizarDepartamento();
+            newForm.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            frmEliminarDepartamento newForm = new frmEliminarDepartamento();
+            newForm.Show();
+        }
     }
 }

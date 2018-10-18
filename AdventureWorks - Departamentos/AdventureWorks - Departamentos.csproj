@@ -78,6 +78,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmActualizarDepartamento.resx">
+      <DependentUpon>frmActualizarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearDepartamentos.resx">
+      <DependentUpon>frmCrearDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarDepartamento.resx">
+      <DependentUpon>frmEliminarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarDepartamentos.resx">
+      <DependentUpon>frmListarDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Operaciones CRUD con Departamentos AdventureWorks.resx">
       <DependentUpon>Operaciones CRUD con Departamentos AdventureWorks.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +114,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Querys\SPActualizar.sql" />
+    <Content Include="Querys\SPCrear.sql" />
+    <Content Include="Querys\SPEliminar.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
